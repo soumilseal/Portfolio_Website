@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soumil Seal – Web Developer & BCA Student</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Portfolio of Soumil Seal, BCA student building web apps, cloud projects and IoT systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div><div id="glow"></div>
+<header><div class="wrap">
+  <a class="mark" href="#top">Soumil Seal</a>
+  <button id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav aria-label="Main">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    <button id="theme" aria-label="Switch light or dark theme">◐</button>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="hero">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div>
+      <p class="hi">Hello, I’m</p>
+      <h1>Soumil Seal</h1>
+      <p class="type"><span id="tw"></span><i></i></p>
+      <p class="lead">A BCA student from Chandannagar who builds web apps, cloud projects and IoT systems, and cares about code that is simple, useful and clean.</p>
+      <div class="btns">
+        <a class="btn fill" href="#projects">See my projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="stage" id="stage" role="img" aria-label="Portrait of Soumil Seal">
+      <canvas id="orb" aria-hidden="true"></canvas>
+      <div class="inner" id="inner">
+        <div class="ring"></div><div class="photo"><img src="photo.jpg" alt="Soumil Seal" width="540" height="720"></div>
+        <div class="chip c1">Open to internships</div>
+        <div class="chip c2">BCA · 2027</div>
+        <div class="chip c3">Python · Java · AWS</div>
+      </div>
+    </div>
+    <div class="code" hidden aria-hidden="true">
+      <div class="dots"><span></span><span></span><span></span></div>
+<pre><span class="k">const</span> soumil = {
+  role:     <span class="s">"BCA Student"</span>,
+  college:  <span class="s">"Techno India Hooghly"</span>,
+  stack:    [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JS"</span>, <span class="s">"Java"</span>],
+  learning: <span class="s">"Python & ML"</span>,
+  building: <span class="s">"IoT flood alerts"</span>,
+  graduates: <span class="k">2027</span>,
+  openTo:   <span class="s">"Internships"</span>
+};</pre>
+    </div>
+  </div>
+</div>
+
+<div class="marq" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section id="about"><div class="wrap about">
+  <div class="rv">
+    <h2>About me</h2>
+    <p>I’m a Bachelor of Computer Applications student at Techno India Hooghly (MAKAUT), graduating in 2027. I like turning an idea into something people can open and use, such as a weather app, a task manager or a serverless HTML viewer on AWS.</p>
+    <p>Python and Java are my favourite subjects, and I enjoy projects where software meets real-world problems, like my IoT flood warning system. Right now I’m studying Machine Learning, Cyber Security and Research Methodology.</p>
+    <p>I won my college debate competition, and I enjoy travelling and reading. I’m looking for an internship or entry-level role where I can learn fast and contribute.</p>
+  </div>
+  <div class="stats rv">
+    <div class="stat"><b data-n="6">0</b><span>Projects built</span></div>
+    <div class="stat"><b data-n="5">0</b><span>Core technologies</span></div>
+    <div class="stat"><b data-n="3">0</b><span>Languages spoken</span></div>
+    <div class="stat"><b data-n="2027">0</b><span>Graduation year</span></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2 class="rv">Projects</h2>
+  <p class="sub rv">My two main projects, plus smaller apps I have built and published on GitHub.</p>
+  <article class="card feat rv">
+    <div>
+      <span class="pill">In progress</span>
+      <h3>IoT Early Flood Detection and Avoidance</h3>
+      <p>An intelligent system that watches natural factors such as water level and weather to predict a flood early, so people can prepare and reduce the damage to life and property.</p>
+      <p>It connects over Wi-Fi, so the collected data can be seen from anywhere using IoT.</p>
+    </div>
+    <div class="flow" aria-label="How the system works">
+      <div>Sensors read natural conditions</div>
+      <div>Wi-Fi sends the data online</div>
+      <div>The system predicts flood risk</div>
+      <div>People get an early warning</div>
+    </div>
+  </article>
+  <article class="card feat rv">
+    <div>
+      <span class="pill">AWS internship project</span>
+      <h3>Serverless Online HTML Viewer on AWS</h3>
+      <p>A web app that runs with no servers at all. Users can upload an HTML file, preview it live in the browser, download it, copy the code and share a link. A light and dark theme button makes it comfortable to use.</p>
+      <p>The files are stored in Amazon S3 and delivered over HTTPS by Amazon CloudFront, so it loads fast for users around the world. All the app logic is plain HTML, CSS and JavaScript in the browser.</p>
+      <div class="chips" style="margin-top:6px"><span>Amazon S3</span><span>CloudFront</span><span>HTTPS and ACM</span><span>CORS</span><span>HTML, CSS, JavaScript</span></div>
+    </div>
+    <div class="flow" aria-label="How the app works">
+      <div>The user opens the secure HTTPS link</div>
+      <div>CloudFront serves it from the nearest location</div>
+      <div>S3 keeps the files private using access control</div>
+      <div>The browser previews, copies and shares the HTML</div>
+    </div>
+  </article>
+  <div class="repos">
+    <a class="card repo rv" href="https://github.com/soumilseal/student-management" target="_blank" rel="noopener"><h3>Student Management</h3><p>A tool to keep and manage student records in one place.</p><span>JavaScript</span></a>
+    <a class="card repo rv" href="https://github.com/soumilseal/pdf-ss" target="_blank" rel="noopener"><h3>PDF Merger</h3><p>Combine several PDF files into a single document.</p><span>HTML</span></a>
+    <a class="card repo rv" href="https://github.com/soumilseal/weather-app" target="_blank" rel="noopener"><h3>Weather App</h3><p>Check the weather for any place on a simple, clear screen.</p><span>CSS</span></a>
+    <a class="card repo rv" href="https://github.com/soumilseal/Task-manager" target="_blank" rel="noopener"><h3>Task Manager</h3><p>A to-do style app to plan and track your daily tasks.</p><span>CSS</span></a>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2 class="rv">Skills</h2>
+  <p class="sub rv">The tools I use to build, and the subjects I am studying to get better.</p>
+  <div class="skills">
+    <div class="card rv"><h3>Programming</h3><div class="chips"><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span></div></div>
+    <div class="card rv"><h3>Web and tools</h3><div class="chips"><span>Responsive design</span><span>Git and GitHub</span><span>MS Office</span></div></div>
+    
+    <div class="card rv"><h3>Spoken languages</h3><div class="chips"><span>English</span><span>Bengali</span><span>Hindi</span></div></div>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap edu">
+  <div class="rv">
+    <h2>Education</h2>
+    <p class="sub">My path so far.</p>
+    <ol class="tl">
+      <li><b>Bachelor of Computer Applications</b><span>Techno India Hooghly, MAKAUT · Expected 2027</span></li>
+      <li><b>Higher Secondary</b><span>West Bengal Council of Higher Secondary Education · 2023</span></li>
+      <li><b>Madhyamik Pariksha</b><span>West Bengal Board of Secondary Education · 2021</span></li>
+    </ol>
+  </div>
+  <div class="card rv" style="align-self:start;margin-top:8px">
+    <span class="pill">Achievement</span>
+    <h3 style="font:600 24px var(--serif);margin:0 0 10px">Winner, College Debate Competition</h3>
+    <p style="margin:0;color:var(--muted)">Debating taught me to think quickly, listen well and explain ideas clearly, which helps me work in a team and present my projects.</p>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap rv">
+  <h2>Let’s work together</h2>
+  <p class="sub">I’m open to internships, entry-level roles and project collaboration. Send me a message and I will reply soon.</p>
+  <a class="mail" href="mailto:soumilseal9@gmail.com">soumilseal9@gmail.com</a>
+  <div class="btns">
+    <button class="btn" id="copy">Copy email</button>
+    <a class="btn" href="https://www.linkedin.com/in/soumil-seal-3963a828a" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/soumilseal" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></section>
+</main>
+<footer>© 2026 Soumil Seal · Chandannagar, West Bengal, India</footer>
+<div id="toast" role="status">Email copied</div>
+<button id="up" aria-label="Back to top">↑</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
